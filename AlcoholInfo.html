@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3. Semesterprojekt</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./data.json"></script>
+    <link href="./assets/css/alcoholInfo.css" rel="stylesheet">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="rotatingMenu text-center row">
+        <button class="button buttonRight" onclick="plusDivs(-1)">&#10094;</button>
+        <div class="alcohol vodka">
+            <img src="pictures/vodka.jpg">
+            <div class="details">
+                <div class="alcoholName">Vodka</div>
+                <div class="alcoholDescription">Wow vodka.</div>
+            </div>
+        </div>
+        <div class="alcohol beer">
+            <img src="pictures/kisspng-beer-icon-design-icon-beer-5a6a18519fe249.7805303115169024816549.jpg">
+            <div class="details">
+                <div class="alcoholName">Beer</div>
+                <div class="alcoholDescription">Wow beer.</div>
+            </div>
+        </div>
+        <div class="alcohol whiskey">
+            <img src="pictures/whiskey.jpg">
+            <div class="details">
+                <div class="alcoholName">Whiskey</div>
+                <div class="alcoholDescription">Wow whiskey.</div>
+            </div>
+        </div>
+        <button class="button buttonLeft" onclick="plusDivs(+1)">&#10094;</button>
+    </div>
+    
+    <footer>
+        <div class="container-fluid padding">
+            <dic class="row text-center">
+                <div class="col-12">
+                    <p> © Copyright 2018 | Pornhub.com | All Rights Reserved | Contact - Sebastian Flensted</p>
+                    <hr class="light">
+                </div>
+            </dic>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("alcohol");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="./assets/js/alcoholInfo.js"></script>
