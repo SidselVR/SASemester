@@ -66,6 +66,14 @@ text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   padding: 1rem;
   border-radius: 0;
 }
+
+.lead{
+    display: block;
+}
+.hideLead{
+    display: none;
+}
+
 .padding {
   padding-bottom: 2rem;
 }
