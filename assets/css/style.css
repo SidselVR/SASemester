@@ -23,6 +23,7 @@ body {
 
 .nav-link {
     font-size: 1.5em !important;
+    padding: 2px!important;
 }
 
 .padding {
@@ -30,12 +31,12 @@ body {
 }
 
 footer {
-    background-color: #ffa844;
+    background-color: #FFB959;
     width: 100%;
 }
 
 hr.light {
-    border-top: 1px solid #ba7e2c;
+    border-top: 1px solid #bf823d;
     width: 75%;
     margin-top: .8rem;
     margin-bottom: 0rem;

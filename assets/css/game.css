@@ -1,3 +1,17 @@
+body{
+    background-color: rgba(255, 185, 89, 0.4);
+}
+
 .gamePicture {
     height: 50vw;
+}
+
+h2{
+    font-size: 1.2em;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+p{
+   margin-bottom: 0px; 
 }

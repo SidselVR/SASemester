@@ -8,14 +8,14 @@
     <title>3. Semesterprojekt</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./data.json"></script>
-    <link href="./assets/css/style.css" rel="stylesheet">
-    <link href="./assets/css/game.css" rel="stylesheet">
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="./assets/js/alcoholInfo.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/game.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | VRDating</title>
@@ -55,24 +55,31 @@
     </nav>
     
     <div class="webgl-content d-none d-lg-block">
-        <div id="gameContainer" style="width: 960px; height: 600px"></div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10" id="gameContainer" style="width: 960px; height: 600px"></div>
+            <div class="col-lg-1"></div>
+        </div>
         <div class="footer">
             <div class="webgl-logo"></div>
             <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
             <div class="title">VRDating</div>
         </div>
     </div>
-    <div class="row d-lg-none">
+    <div class="row d-lg-none no-gutters">
         <div class="col-1 col-sm-2 col-lg-3"></div>
         <img class ="gamePicture col-10 col-sm-8 col-lg-6" src="assets/images/aaaa.png">
         <div class="col-1 col-sm-2 col-lg-3"></div>
     </div>
-    <div class="row">
+    <div class="row no-gutters">
         <div class="col-1 col-sm-2 col-lg-3"></div>
         <div class="text-center col-10 col-sm-8 col-lg-6">
             <p>To dowload the VR-version of the game, klik <a href="url">Here!</a> (Obs! Only works for android phones!)</p>
-            <p class="d-none d-lg-block">AAAA????</p>
-            <p>As this is a virtual reality game, simply move your phone around to look around. When people ask you questions you answer them by nodding or shaking your head. You can drink by looking at the bottle on the table for X seconds.</p>
+            <h2 class="d-none d-lg-block">PC controls:</h2>
+            <p class="d-none d-lg-block">To look around INSERT HERE. To answer questions simply "nod" or "shake" your head. You can drink by looking at any bottle and/or bevarage for X seconds.</p>
+            <h2>VR controls:</h2>
+            <p>As this is a virtual reality game, simply move your phone around to look around. When people ask you questions you answer them by nodding or shaking your head. You can drink by looking at any bottle and/or bevarage for X seconds.</p>
+            <h2>About the game:</h2>
             <p>Description of game, or literally anything else here</p>
         </div>
         <div class="col-1 col-sm-2 col-lg-3"></div>
