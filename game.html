@@ -16,19 +16,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="./assets/css/style.css" rel="stylesheet">
     <link href="./assets/css/game.css" rel="stylesheet">
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | VRDating</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/sfad.json", {
-            onProgress: UnityProgress
-        });
-
-    </script>
 </head>
 
 <body>
@@ -53,43 +40,32 @@
             </div>
         </div>
     </nav>
-    
-    <div class="webgl-content d-none d-lg-block">
-        <div class="row">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-10" id="gameContainer" style="width: 960px; height: 600px"></div>
-            <div class="col-lg-1"></div>
-        </div>
-        <div class="footer">
-            <div class="webgl-logo"></div>
-            <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-            <div class="title">VRDating</div>
-        </div>
-    </div>
-    <div class="row d-lg-none no-gutters">
-        <div class="col-1 col-sm-2 col-lg-3"></div>
-        <img class ="gamePicture col-10 col-sm-8 col-lg-6" src="assets/images/aaaa.png">
-        <div class="col-1 col-sm-2 col-lg-3"></div>
+
+    <div class="row no-gutters">
+        <div class="col-1 col-sm-2"></div>
+        <img class ="gamePicture col-10 col-sm-8" src="assets/images/Gamepic.png">
+        <div class="col-1 col-sm-2"></div>
     </div>
     <div class="row no-gutters">
-        <div class="col-1 col-sm-2 col-lg-3"></div>
-        <div class="text-center col-10 col-sm-8 col-lg-6">
-            <p>To dowload the VR-version of the game, klik <a href="url">Here!</a> (Obs! Only works for android phones!)</p>
-            <h2 class="d-none d-lg-block">PC controls:</h2>
-            <p class="d-none d-lg-block">To look around INSERT HERE. To answer questions simply "nod" or "shake" your head. You can drink by looking at any bottle and/or bevarage for X seconds.</p>
+        <div class="col-1 col-sm-2"></div>
+        <div class="text-center col-10 col-sm-8">
+            <h2>Dowloads</h2>
+            <p>There are two versions of this game, one for the <a href="https://www.dropbox.com/s/fu0bkyw7lt4rkqb/SmartDrinking.zip?dl=0">pc</a>, and one for <a href="https://www.dropbox.com/s/320po0u79g42teo/DatingWow.apk?dl=0">Virtual reality</a>! Do mind, that the VR version only works on android phones.</p>
+            <h2>PC controls:</h2>
+            <p>To look around hold down the left mousebutton and drag your mouse around. Two boxes will appear when you're asked a question where you simply click one to answer. You can drink by clicking on any bottle and/or bevarage.</p>
             <h2>VR controls:</h2>
-            <p>As this is a virtual reality game, simply move your phone around to look around. When people ask you questions you answer them by nodding or shaking your head. You can drink by looking at any bottle and/or bevarage for X seconds.</p>
+            <p>As this is a virtual reality game, simply move your phone around to look around. When people ask you questions you answer them by nodding or shaking your head. You can drink by looking at any bottle and/or bevarage for 1.5 seconds.</p>
             <h2>About the game:</h2>
             <p>Description of game, or literally anything else here</p>
         </div>
-        <div class="col-1 col-sm-2 col-lg-3"></div>
+        <div class="col-1 col-sm-2"></div>
     </div>
 
     <footer>
         <div class="container-fluid padding">
             <dic class="row text-center">
                 <div class="col-12">
-                    <p> © Copyright 2018 | Pornhub.com | All Rights Reserved | Contact - Sebastian Flensted</p>
+                    <p>© Copyright 2018 | <a href="https://cannonperson.itch.io/"> itch.io</a> | Læs mere hos <a href="https://www.sst.dk/da/sundhed-og-livsstil/alkohol"> Sundhedsstyrelsen</a></p>
                     <hr class="light">
                 </div>
             </dic>
